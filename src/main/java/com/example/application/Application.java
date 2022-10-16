@@ -16,7 +16,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @Theme(value = "flowcrmtutorial")
-@PWA(name = "Flow CRM Tutorial", shortName = "Flow CRM Tutorial", offlineResources = {})
+@PWA(name = "Flow CRM",
+        shortName = "Flow CRM",
+        offlinePath = "offline.html",
+        offlineResources = {"icons/icon.png", "images/offline.webp"})
 @NpmPackage(value = "line-awesome", version = "1.3.0")
 public class Application implements AppShellConfigurator {
 
