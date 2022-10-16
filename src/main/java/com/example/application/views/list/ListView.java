@@ -19,7 +19,7 @@ import com.vaadin.flow.router.Route;
 import java.util.Collections;
 
 @PageTitle("Contacts")
-@Route(value = "")
+@Route(value = "", layout = MainLayout.class)
 public class ListView extends VerticalLayout {
     Grid<Contact> grid = new Grid<>(Contact.class);
     TextField filterText = new TextField();
