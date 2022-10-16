@@ -1,1 +1,8 @@
 @import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+@media all and (max-width: 1100px) {
+  .list-view.editing .toolbar,
+  .list-view.editing .contact-grid {
+    display: none;
+  }
+}
